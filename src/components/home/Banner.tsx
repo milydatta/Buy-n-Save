@@ -1,5 +1,8 @@
 import React from 'react';
 import { Carousel, Col, Container, ListGroup, Row } from 'react-bootstrap';
+import banner1 from 'assets/images/banner1.jpg';
+import banner2 from 'assets/images/banner2.jpg';
+import banner3 from 'assets/images/banner3.jpg';
 
 const Banner = () => {
   return (
@@ -18,19 +21,26 @@ const Banner = () => {
               <ListGroup.Item>Morbi leo risus</ListGroup.Item>
             </ListGroup>
           </Col>
-          <Col lg={9}>
+          <Col lg={9} className="mt-2">
             <Carousel>
               <Carousel.Item>
                 <img
                   className="d-block w-100"
-                  src="holder.js/800x400?text=First slide&bg=373940"
+                  src={banner1}
                   alt="First slide"
                 />
               </Carousel.Item>
               <Carousel.Item>
                 <img
                   className="d-block w-100"
-                  src="holder.js/800x400?text=Second slide&bg=282c34"
+                  src={banner2}
+                  alt="Second slide"
+                />
+              </Carousel.Item>
+              <Carousel.Item>
+                <img
+                  className="d-block w-100"
+                  src={banner3}
                   alt="Second slide"
                 />
               </Carousel.Item>
